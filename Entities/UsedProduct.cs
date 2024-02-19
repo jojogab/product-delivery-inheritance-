@@ -21,7 +21,7 @@ namespace Products.Entities
 
         public override string priceTag()
         {
-            string tag = $"{Name} (used) $ {Price} (Manufacture date: {ManufactureDate})";
+            string tag = $"{Name} (used) $ {Price} (Manufacture date: {ManufactureDate.ToString("dd/MM/yyyy")})";
             return tag;
         }
     }
